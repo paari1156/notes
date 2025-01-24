@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes</title>
+    <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <div class="window-controls">
+                    <span class="control close"></span>
+                    <span class="control minimize"></span>
+                    <span class="control maximize"></span>
+                </div>
+                <div class="search-bar">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <input type="text" placeholder="Search all notes">
+                </div>
+                <button id="theme-toggle" aria-label="Toggle theme">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="notes-list" id="notes-list">
+                <div class="note-item active" data-note-id="1">
+                    <div class="note-meta">
+                        <h3>Project Ideas</h3>
+                        <span class="note-date">Today at 2:30 PM</span>
+                    </div>
+                    <p>Brainstorming new features for the upcoming release...</p>
+                </div>
+                <div class="note-item" data-note-id="2">
+                    <div class="note-meta">
+                        <h3>Meeting with Design Team</h3>
+                        <span class="note-date">Yesterday</span>
+                    </div>
+                    <p>UI/UX review for the dashboard redesign project. Key points discussed...</p>
+                </div>
+                <div class="note-item" data-note-id="3">
+                    <div class="note-meta">
+                        <h3>Reading List</h3>
+                        <span class="note-date">2 days ago</span>
+                    </div>
+                    <p>1. Design Patterns by Gang of Four
+2. Clean Code by Robert Martin
+3. Refactoring by Martin Fowler</p>
+                </div>
+                <div class="note-item" data-note-id="4">
+                    <div class="note-meta">
+                        <h3>Travel Plans</h3>
+                        <span class="note-date">Last week</span>
+                    </div>
+                    <p>Flight details, hotel bookings, and itinerary for the upcoming trip...</p>
+                </div>
+                <div class="note-item" data-note-id="5">
+                    <div class="note-meta">
+                        <h3>Recipe Collection</h3>
+                        <span class="note-date">2 weeks ago</span>
+                    </div>
+                    <p>Grandma's special pasta sauce, chocolate chip cookies, and more...</p>
+                </div>
+            </div>
+        </div>
+        <div class="editor">
+            <div class="editor-header">
+                <input type="text" class="note-title" placeholder="Note Title" value="Project Ideas">
+                <div class="editor-toolbar">
+                    <button class="toolbar-btn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                            <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                        </svg>
+                    </button>
+                    <button class="toolbar-btn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </button>
+                    <button class="toolbar-btn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+                            <polyline points="16 6 12 2 8 6"></polyline>
+                            <line x1="12" y1="2" x2="12" y2="15"></line>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="editor-content">
+                <textarea placeholder="Start writing...">Project Ideas for Q2 2024
+
+1. Enhanced User Authentication
+   - Implement biometric login
+   - Two-factor authentication
+   - Single sign-on integration
+
+2. Performance Optimization
+   - Code splitting and lazy loading
+   - Image optimization pipeline
+   - Caching strategy implementation
+
+3. Mobile App Features
+   - Offline mode support
+   - Push notifications
+   - Cross-device sync
+
+4. Analytics Dashboard
+   - Real-time user tracking
+   - Custom report generation
+   - Data visualization improvements
+
+5. API Enhancements
+   - GraphQL implementation
+   - Rate limiting
+   - API versioning
+
+Next Steps:
+- Schedule team review meeting
+- Create technical specifications
+- Set up project milestones
+- Assign team responsibilities
+
+Resources needed:
+- Frontend developer (2)
+- Backend developer (2)
+- UI/UX designer (1)
+- QA engineer (1)
+
+Timeline:
+April - Planning and Design
+May - Development
+June - Testing and Deployment</textarea>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+</body>
+</html>
